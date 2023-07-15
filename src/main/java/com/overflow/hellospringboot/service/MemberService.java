@@ -2,13 +2,12 @@ package com.overflow.hellospringboot.service;
 
 import com.overflow.hellospringboot.domain.Member;
 import com.overflow.hellospringboot.repository.MemberRepository;
-import com.overflow.hellospringboot.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
 
-    private MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
 
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
