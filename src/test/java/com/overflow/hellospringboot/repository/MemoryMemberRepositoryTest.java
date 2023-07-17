@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class MemoryMemberRepositoryTest {
 
-    MemberRepository repository = new MemoryMemberRepository();
+    MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach // 함수 실행이 끝날 때 마다 자동 실행되는 콜백 어노테이션
     public void afterEach() {
